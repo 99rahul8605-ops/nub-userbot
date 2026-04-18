@@ -296,7 +296,8 @@ def getuser_data(user_id):
 @retry()
 async def forward_message_handler(client, message):
         sender = client.me.id
-
+        if getattr(message, 'service', None):
+            return
         session_name = f'user_{sender}'
         user_dir = f"{ggg}/{session_name}"
         os.makedirs(user_dir, exist_ok=True)

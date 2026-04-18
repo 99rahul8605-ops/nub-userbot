@@ -1,0 +1,63 @@
+{
+  "name": "NUB Userbot",
+  "description": "A powerful, highly modular, and clean Pyrogram based Telegram Userbot.",
+  "logo": "https://raw.githubusercontent.com/nub-coders/nub-userbot/main/userbot.jpg",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "pyrogram",
+    "python",
+    "nub"
+  ],
+  "repository": "https://github.com/nub-coders/nub-userbot",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash from my.telegram.org",
+      "required": true
+    },
+    "SESSION_STR": {
+      "description": "Your Pyrogram String Session",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "A Bot Token from @BotFather (optional but recommended for full features)",
+      "required": false
+    },
+    "GEMINI_API_KEY": {
+      "description": "Google Gemini API Key for AI features",
+      "required": false
+    },
+    "GROUP": {
+      "description": "Your support group username (without @)",
+      "value": "nub_coder_s",
+      "required": false
+    },
+    "CHANNEL": {
+      "description": "Your updates channel username (without @)",
+      "value": "nub_coders",
+      "required": false
+    },
+    "USERBOT_USERNAME": {
+      "description": "The username of your userbot account (without @) to use in menus",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}

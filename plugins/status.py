@@ -24,7 +24,7 @@ async def alive(client, message):
 {emoji} <b>Pyrogram Version :</b> <code>{versipyro}</code>
 {emoji} <b>Bot Uptime :</b> <code>{uptime}</code></blockquote>
 
-<b>[SUPPORT](https://t.me/{GROUP})</b> | <b>[CHANNEL](https://t.me/{CHANNEL})</b> | <b>[OWNER]({userbot_link})</b>"""
+<b>[SUPPORT](https://t.me/{GROUP})</b> | <b>[CHANNEL](https://t.me/{CHANNEL})</b> | <b>[OWNER](tg://user?id={client.me.id})</b>"""
     )
     try:
             await xx.delete()
