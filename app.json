@@ -24,11 +24,11 @@
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "A Bot Token from @BotFather (optional but recommended for full features)",
+      "description": "Optional: A Bot Token from @BotFather (used for inline bot features)",
       "required": false
     },
     "GEMINI_API_KEY": {
-      "description": "Google Gemini API Key for AI features",
+      "description": "Optional: Google Gemini API Key from https://aistudio.google.com/app/apikey (needed for AI features)",
       "required": false
     },
     "GROUP": {
@@ -43,6 +43,10 @@
     },
     "USERBOT_USERNAME": {
       "description": "The username of your userbot account (without @) to use in menus",
+      "required": false
+    },
+    "NUBYTDLP_API": {
+      "description": "Optional: API Key for NUBYTDLP to download YouTube videos",
       "required": false
     }
   },
